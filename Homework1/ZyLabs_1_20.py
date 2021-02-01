@@ -12,7 +12,6 @@ print('And', user_num1, 'cubed is', num1_cubed, '!!')
 
 print('Enter another integer:')  # get 2nd integer input from user
 user_num2 = int(input())
-print(user_num2)
 nums_sum = user_num1 + user_num2  # calculate sum of both inputs
 nums_product = user_num1 * user_num2  # calculate product of both inputs
 print('{} + {} is {}'.format(user_num1, user_num2, nums_sum))
