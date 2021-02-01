@@ -26,5 +26,6 @@ colors = {
     'blue': 25,
     'green': 23
 }
+colors_gallons = cans_needed * colors[color_paint]
 print('Cost of purchasing {} paint:'.format(color_paint), end=' $')
-print(colors[color_paint])
+print(colors_gallons)
