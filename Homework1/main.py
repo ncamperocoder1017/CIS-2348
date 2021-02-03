@@ -14,11 +14,10 @@ print("Davy's auto shop services")
 print('Oil change -- ${}'.format(services['Oil change']))
 print('Tire rotation -- ${}'.format(services['Tire rotation']))
 print('Car wash -- ${}'.format(services['Car wash']))
-print('Car wax-- ${}'.format(services['Car wax']), end='')
-print('\n')
+print('Car wax -- ${}'.format(services['Car wax']), end='')
 
 # ask user for services needed
-print('Select first service:')
+print('\nSelect first service:')
 service = str(input())
 print('Select second service:')
 service2 = str(input())
