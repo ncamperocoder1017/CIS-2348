@@ -56,3 +56,4 @@ else:
     print('Service 2: {}, ${}'.format(service2, services[service2]), end='')
     print('\n')
     print('Total: ${}'.format(total_cost))
+
