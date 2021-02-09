@@ -25,7 +25,10 @@ service1_cost = 0
 service2_cost = 0
 
 # assign cost to service
-if service == '-':
+if (service == '-') and (service2 == '-'):
+    service1_cost = 0
+    service2_cost = 0
+elif service == '-':
     service1_cost = 0
     service2_cost = services[service2]
 elif service2 == '-':
@@ -38,7 +41,13 @@ else:
 total_cost = service1_cost + service2_cost
 
 # conditionals determine output. If any service is a dash, cost is 0. Print total cost.
-if service == '-':
+if (service == '-') and (service2 == '-'):
+    print("\nDavy's auto shop invoice")
+    print('\nService 1: No service')
+    print('Service 2: No service')
+    print('\n')
+    print('Total: $0.')
+elif service == '-':
     print("\nDavy's auto shop invoice")
     print('\nService 1: No service')
     print('Service 2: {}, ${}'.format(service2, services[service2]), end='')
@@ -56,4 +65,3 @@ else:
     print('Service 2: {}, ${}'.format(service2, services[service2]), end='')
     print('\n')
     print('Total: ${}'.format(total_cost))
-
