@@ -1,6 +1,13 @@
 # Nicolas Campero
 # 1856853
 
+inputval = 0
+dollars_new = 0
+quarters_new = 0
+dimes_new = 0
+nickels_new = 0
+pennies_new = 0
+
 
 # def function exact_change
 def exact_change(user_total):
@@ -18,9 +25,7 @@ def exact_change(user_total):
 
 if __name__ == 'main':
     inputval = int(input())
-
-
-dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
+    dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
 # give output from if and else statements
 if dollars_new > 1:
