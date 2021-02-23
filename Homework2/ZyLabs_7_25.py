@@ -1,14 +1,6 @@
 # Nicolas Campero
 # 1856853
 
-inputval = 0
-dollars_new = 0
-quarters_new = 0
-dimes_new = 0
-nickels_new = 0
-pennies_new = 0
-
-
 # def function exact_change
 def exact_change(user_total):
     dollars = user_total // 100  # converts to dollar amount
@@ -23,7 +15,7 @@ def exact_change(user_total):
     return dollars, quarters, dimes, nickels, pennies
 
 
-if __name__ == 'main':
+if __name__ == '__main__':
     inputval = int(input())
     dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
