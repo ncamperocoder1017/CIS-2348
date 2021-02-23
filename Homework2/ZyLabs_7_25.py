@@ -47,4 +47,4 @@ elif pennies_new == 1:
     print('1 penny')
 
 if inputval <= 0:
-    print('No change given')
+    print('no change')
