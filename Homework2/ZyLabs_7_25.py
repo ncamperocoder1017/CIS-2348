@@ -19,31 +19,31 @@ if __name__ == '__main__':
     inputval = int(input())
     dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
-# give output from if and else statements
-if dollars_new > 1:
-    print('{} dollars'.format(dollars_new))
-elif dollars_new == 1:
-    print('1 dollar')
+    # give output from if and else statements
+    if dollars_new > 1:
+        print('{} dollars'.format(dollars_new))
+    elif dollars_new == 1:
+        print('1 dollar')
 
-if quarters_new > 1:
-    print('{} quarters'.format(quarters_new))
-elif quarters_new == 1:
-    print('1 quarter')
+    if quarters_new > 1:
+        print('{} quarters'.format(quarters_new))
+    elif quarters_new == 1:
+        print('1 quarter')
 
-if dimes_new > 1:
-    print('{} dimes'.format(dimes_new))
-elif dimes_new == 1:
-    print('1 dime')
+    if dimes_new > 1:
+        print('{} dimes'.format(dimes_new))
+    elif dimes_new == 1:
+        print('1 dime')
 
-if nickels_new > 1:
-    print('{} nickels'.format(nickels_new))
-elif nickels_new == 1:
-    print('1 nickel')
+    if nickels_new > 1:
+        print('{} nickels'.format(nickels_new))
+    elif nickels_new == 1:
+        print('1 nickel')
 
-if pennies_new > 1:
-    print('{} pennies'.format(pennies_new))
-elif pennies_new == 1:
-    print('1 penny')
+    if pennies_new > 1:
+        print('{} pennies'.format(pennies_new))
+    elif pennies_new == 1:
+        print('1 penny')
 
-if inputval <= 0:
-    print('no change')
+    if inputval <= 0:
+        print('no change')
