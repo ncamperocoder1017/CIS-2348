@@ -1,9 +1,6 @@
 # Nicolas Campero
 # 1856853
 
-# Get input from user in cents amount
-cents = int(input())
-
 
 # def function exact_change
 def exact_change(user_total):
@@ -18,6 +15,9 @@ def exact_change(user_total):
     pennies = user_total
     return dollars, quarters, dimes, nickels, pennies
 
+
+if name == 'main':
+    inputval = int(input())
 
 dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(cents)
 
