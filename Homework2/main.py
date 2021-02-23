@@ -18,7 +18,7 @@ def exact_change(user_total):
 
 inputval = int(input())
 
-dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(cents)
+dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
 # give output from if and else statements
 if dollars_new > 1:
