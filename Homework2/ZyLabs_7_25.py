@@ -16,7 +16,9 @@ def exact_change(user_total):
     return dollars, quarters, dimes, nickels, pennies
 
 
-inputval = int(input())
+if __name__ == 'main':
+    inputval = int(input())
+
 
 dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
