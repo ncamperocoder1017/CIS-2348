@@ -3,15 +3,15 @@
 
 import csv
 file = 'input1.csv'
-frequency = {}
+word_freq = {}
 
 with open(file, 'r') as csvfile:
     csvfile = csv.reader(csvfile)
     for row in csvfile:
         for word in row:
-            if word not in frequency.keys():
-                frequency[word] = 1
+            if word not in word_freq.keys():
+                word_freq[word] = 1
             else:
-                frequency[word] = frequency[word] + 1
-for i in frequency.keys():
-    print(i,frequency[i])
+                word_freq[word] = word_freq[word] + 1
+for i in word_freq.keys():
+    print(i,word_freq[i])
