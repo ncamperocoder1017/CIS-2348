@@ -2,21 +2,20 @@
 # 1856853
 
 mypassword = input()
-password = ''
 
 for i in mypassword:
     if i == 'i':
-        password += '!'
+        mypassword = mypassword.replace('i', '!')
     elif i == 'a':
-        password += '@'
+        mypassword = mypassword.replace('a', '@')
     elif i == 'm':
-        password += 'M'
+        mypassword = mypassword.replace('m', 'M')
     elif i == 'B':
-        password += '8'
+        mypassword = mypassword.replace('B', '8')
     elif i == 'o':
-        password += '.'
-    else:
-        password += i
+        mypassword = mypassword.replace('o', '.')
 
-password += 'q*s'
-print(password)
+mypassword += 'q*s'
+
+
+print(mypassword)

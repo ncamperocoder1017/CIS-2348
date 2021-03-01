@@ -1,6 +1,8 @@
 # Nicolas Campero
 # 1856853
 
+from datetime import datetime
+
 # create a dictionary of dates with numbers associated to each month
 date_list = {
     "January": "1",
@@ -20,7 +22,9 @@ date_list = {
 in_file = open('inputDates.txt', 'r')
 out_file = open('parsedDates.txt', 'w')
 
-
+for date in in_file:
+    if date <= str(datetime.now()):
+        print(date)
 
 out_file.close()  # close the parsedDates.txt file
 in_file.close()  # close the inputDates.txt file
