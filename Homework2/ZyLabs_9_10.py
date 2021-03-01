@@ -14,4 +14,4 @@ with open(file, 'r') as csvfile:
             else:
                 word_freq[word] = word_freq[word] + 1
 for i in word_freq.keys():
-    print(i,word_freq[i])
+    print(i, word_freq[i])
