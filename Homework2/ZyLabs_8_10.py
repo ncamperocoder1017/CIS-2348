@@ -2,7 +2,7 @@
 # 1856853
 
 # get string input from user
-pal_word = input('Enter a word to see if the word entered is a palindrome:')
+pal_word = input()
 
 
 def word_is_palindrome(word):
@@ -12,7 +12,7 @@ def word_is_palindrome(word):
         return False
 
 
-flag = word_is_palindrome(pal_word)
+flag = word_is_palindrome(pal_word.replace(' ', ''))
 
 if flag:
     print(pal_word, "is a palindrome")
