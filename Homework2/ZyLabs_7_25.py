@@ -19,7 +19,7 @@ if __name__ == '__main__':
     inputval = int(input())
     dollars_new, quarters_new, dimes_new, nickels_new, pennies_new = exact_change(inputval)
 
-    # give output from if and else statements
+    # give output from if and else statements; individual vs. plural distinction
     if dollars_new > 1:
         print('{} dollars'.format(dollars_new))
     elif dollars_new == 1:
